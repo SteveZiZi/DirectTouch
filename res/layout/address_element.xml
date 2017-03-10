@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp" >
+            
+       		<ImageView
+       		    android:id="@+id/elememt_addr_checkoff"
+            	android:layout_width="32dp"
+            	android:layout_height="32dp"
+            	android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp" 
+            	android:src="@drawable/checkbox_off" />
+
+        	<ImageView
+            	android:id="@+id/elememt_addr_check"
+            	android:layout_width="32dp"
+            	android:layout_height="32dp"
+            	android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp" 
+            	android:src="@drawable/checkbox_on_3"
+            	android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/elememt_cpcName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="76dp"
+                android:text="CPC"
+                android:textColor="@color/textbody_black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="200dp"
+                android:text="IP地址"
+                android:textColor="@color/textbody_gray"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/elememt_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="310dp"
+                android:digits="1234567890."
+                android:hint="192.168.100.110"
+                android:inputType="number"
+                android:textColor="@color/textbody_black"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="200dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="200dp"
+                android:text="端口号"
+                android:textColor="@color/textbody_gray"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/elememt_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="310dp"
+                android:digits="1234567890"
+                android:hint="10000"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/textbody_black"
+                android:textSize="24sp" />
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="200dp"
+            android:background="@color/line" />
+    
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp" >
+            
+            <ImageView
+       		    android:id="@+id/elememt_addr_remoteoff"
+            	android:layout_width="32dp"
+            	android:layout_height="32dp"
+            	android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp" 
+            	android:src="@drawable/checkbox_off" />
+
+        	<ImageView
+            	android:id="@+id/elememt_addr_remote"
+            	android:layout_width="32dp"
+            	android:layout_height="32dp"
+            	android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp" 
+            	android:src="@drawable/checkbox_on_3"
+            	android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/elememt_cpcName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="76dp"
+                android:text="云端控制"
+                android:textColor="@color/textbody_black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="200dp"
+                android:text="逻辑地址"
+                android:textColor="@color/textbody_gray"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/logic_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="310dp"
+                android:digits="1234567890"
+                android:hint="01"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/textbody_black"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_dark" />
+
+</LinearLayout>

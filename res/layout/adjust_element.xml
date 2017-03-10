@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="22dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp" >
+
+        <TextView
+            android:id="@+id/name_adj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="回路#11"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="169dp"
+            android:text="ON/OFF"
+            android:textColor="@color/textbody_gray"
+            android:textSize="24sp" />
+
+        <com.xtoee.tools.SwitchView
+            android:id="@+id/switch_adj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="169dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="169dp"
+            android:text="DIM"
+            android:textColor="@color/textbody_gray"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/dim_adj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="34dp"
+            android:text="100%"
+            android:textColor="@color/textbody_black"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</LinearLayout>

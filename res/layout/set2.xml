@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_weight="0"
+        android:background="@color/leftmenuofsystem"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cpc1_set"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="CPC1"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/cpc2_set"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="CPC2"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/cpc3_set"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="CPC3"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/cpc4_set"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="CPC4"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp" />
+        
+        <Button
+            android:id="@+id/cpc5_set"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="CPC5"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp" />
+        
+        <Button
+            android:id="@+id/cpc6_set"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="CPC6"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_set"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:orientation="vertical">
+            <LinearLayout 
+                android:layout_width="1200dp"
+                android:layout_height="68dp"
+                android:orientation="horizontal">
+                <Button 
+                    style="@style/ButtonStyleOfSet"
+                    android:text="回路"/>
+                <Button 
+                    style="@style/ButtonStyleOfSet"
+                    android:text="Dim"/>
+                <Button 
+                    style="@style/ButtonStyleOfSet"
+                    android:text="100%"/>
+                <Button 
+                    style="@style/ButtonStyleOfSet"
+                    android:text="90%"/>
+                <Button 
+                    style="@style/ButtonStyleOfSet"
+                    android:text="80%"/>
+                <Button 
+                    style="@style/ButtonStyleOfSet"
+                    android:text="70%"/>
+                <Button 
+                    android:id="@+id/toright_set"
+                    style="@style/ButtonStyleOfSet"
+                    android:text="60%>>"/>
+                <Button 
+                    android:id="@+id/toleft_set"
+                    style="@style/ButtonStyleOfSet"
+                    android:text="@string/toleft"/>
+                <Button 
+                    style="@style/ButtonStyleOfSet"
+                     android:text="50%"/>
+                <Button 
+                    style="@style/ButtonStyleOfSet"
+                    android:text="40%"/>
+                <Button 
+                    style="@style/ButtonStyleOfSet"
+                    android:text="30%"/>
+                <Button 
+                    style="@style/ButtonStyleOfSet"
+                    android:text="20%"/>
+                <Button 
+                    style="@style/ButtonStyleOfSet"
+                    android:text="10%"/>
+                <Button 
+                    style="@style/ButtonStyleOfSet"
+                    android:text="0%"/>
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gridView_scroll"
+                android:layout_width="1200dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:columnWidth="80dp"
+                android:numColumns="14"
+                android:stretchMode="columnWidth" >
+            </GridView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

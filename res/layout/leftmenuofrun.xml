@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/left_bkg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_weight="0"
+        android:background="#b37d11"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/run" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:text="@string/run"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#d6a309"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/cpc_run"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="18dp"
+            android:text="@string/cpc"
+            android:textSize="28sp" />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_dark"/>
+
+        <Button
+            android:id="@+id/cl_run"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="30dp"
+            android:text="@string/cl"
+            android:textSize="28sp" />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_dark"/>
+
+        <Button
+            android:id="@+id/cpr_run"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="14dp"
+            android:text="@string/cpr"
+            android:textSize="28sp" />
+        
+         <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_dark"/>
+
+        <Button
+            android:id="@+id/subcl_run"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="18dp"
+            android:text="@string/subcl"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:background="#b37d11"/>
+    
+    <LinearLayout
+        android:id="@+id/contOfRun"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:background="#219a1b"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/control" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:text="@string/control"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/systOfRun"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:background="#2e4299"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/system" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:text="@string/system"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+</LinearLayout>

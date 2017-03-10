@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/switch_title_background"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:background="@color/leftmenuofrun"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/front_cpr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:src="@drawable/front"
+        style="?android:attr/buttonBarButtonStyle"/>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollviewofH"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <GridView
+                android:id="@+id/topCL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="spacingWidthUniform" >
+            </GridView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/after_cpr"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:src="@drawable/after"/>
+
+</LinearLayout>

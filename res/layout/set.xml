@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@color/leftmenuofsystem"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/cpc1_set"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="26sp"/>
+        
+        <Button 
+            android:id="@+id/cpc2_set"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+            android:text="CPC2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="26sp"/>
+        
+        <Button 
+            android:id="@+id/cpc3_set"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="26sp"/>
+        
+        <Button 
+            android:id="@+id/cpc4_set"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="26sp"/>
+    </LinearLayout>
+    
+    <TableLayout
+        android:id="@+id/cpchead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/CPC_head" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="68dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="回路"
+                android:textSize="22sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="@color/line" />
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Dim"
+                android:textSize="22sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="100%"
+                android:textSize="22sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="90%"
+                android:textSize="22sp"/>
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="80%"
+                android:textSize="22sp"/>
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="70%"
+                android:textSize="22sp"/>
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="60%"
+                android:textSize="22sp"/>
+            
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="@color/line" />
+    </TableLayout>
+    
+    <GridView 
+        android:id="@+id/gridView_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="7"
+        android:background="@color/white">
+        
+    </GridView>
+    
+    <TableLayout
+        android:id="@+id/cpchead2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/CPC_head" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="68dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="回路"
+                android:textSize="22sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="50%"
+                android:textSize="22sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="40%"
+                android:textSize="22sp"/>
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="30%"
+                android:textSize="22sp"/>
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="20%"
+                android:textSize="22sp"/>
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10%"
+                android:textSize="22sp"/>
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0%"
+                android:textSize="22sp"/>
+            
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="@color/line" />
+    </TableLayout>
+    
+    <GridView 
+        android:id="@+id/gridView_set2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="7"
+        android:background="@color/white">
+        
+    </GridView>
+    
+
+</LinearLayout>

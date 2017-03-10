@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@color/leftmenuofsystem"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/cpc1_manager"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc2_manager"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc3_manager"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc4_manager"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc5_manager"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc6_manager"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC6"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dp"
+                android:text="时间"
+                android:textColor="@color/textbody_gray"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/time_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="210dp"
+                android:enabled="false"
+                android:text="2015/07/07 07:07"
+                android:textColor="@color/textbody_black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/timeAdjust"
+                android:layout_width="80dp"
+                android:layout_height="46dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"
+                android:background="@color/leftmenuofsystem"
+                android:text="校准"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dp"
+                android:text="管理者电话"
+                android:textColor="@color/textbody_gray"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/phone_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="210dp"
+                android:inputType="number"
+                android:text="13788888888"
+                android:textColor="@color/textbody_black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/phoneAlter"
+                android:layout_width="80dp"
+                android:layout_height="46dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"
+                android:background="@color/leftmenuofsystem"
+                android:text="修改"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:background="@color/line" />
+
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dp"
+                android:text="自动登录"
+                android:textColor="@color/textbody_gray"
+                android:textSize="24sp" />
+
+            <ImageView
+       		    android:id="@+id/saveoff"
+            	android:layout_width="40dp"
+            	android:layout_height="40dp"
+            	android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+            	android:src="@drawable/checkbox_off" />
+
+        	<ImageView
+            	android:id="@+id/saveon"
+            	android:layout_width="40dp"
+            	android:layout_height="40dp"
+            	android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+            	android:src="@drawable/checkbox_on_3"
+            	android:visibility="invisible" />
+            
+            <Button
+                android:visibility="gone"
+                android:id="@+id/savepwd"
+                android:layout_width="80dp"
+                android:layout_height="46dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"
+                android:background="@color/leftmenuofsystem"
+                android:text="修改"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:background="@color/line" />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dp"
+                android:text="密码管理"
+                android:textColor="@color/textbody_gray"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/pwd_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="210dp"
+                android:inputType="textPassword"
+                android:text="xuantong"
+                android:textColor="@color/textbody_black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/pwdAlter"
+                android:layout_width="80dp"
+                android:layout_height="46dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"
+                android:background="@color/leftmenuofsystem"
+                android:text="修改"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_dark" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E6E6E6" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="版本号"
+            android:textColor="@color/textbody_gray"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="210dp"
+            android:text="@string/version"
+            android:textColor="@color/textbody_black"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,1711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@color/leftmenuofcontrol"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cpc1_procont"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="CPC1"
+            android:textColor="@color/textColor_gray"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/cpc2_procont"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="CPC2"
+            android:textColor="@color/textColor_gray"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/cpc3_procont"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="CPC3"
+            android:textColor="@color/textColor_gray"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/cpc4_procont"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="CPC4"
+            android:textColor="@color/textColor_gray"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <ImageView
+                        android:id="@+id/enable11_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_off" />
+
+                    <ImageView
+                        android:id="@+id/enable21_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_on"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/task1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="任务一"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/task1detail"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="#6AD125"
+                        android:text="查看详情"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cl1_task1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="102dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:text="ID"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ic1_task1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="101dp"
+                        android:text="123"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="312dp"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="330dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/level1_task1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="444dp"
+                        android:text="高"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <ImageView
+                        android:id="@+id/enable12_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_off" />
+
+                    <ImageView
+                        android:id="@+id/enable22_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_on"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/task2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="任务二"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/task2detail"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="#6AD125"
+                        android:text="查看详情"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cl2_task2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="102dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:text="ID"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ic2_task2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="101dp"
+                        android:text="123"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="312dp"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="330dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/level2_task2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="444dp"
+                        android:text="高"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <ImageView
+                        android:id="@+id/enable13_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_off" />
+
+                    <ImageView
+                        android:id="@+id/enable23_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_on"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/task3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="任务三"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/task3detail"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="#6AD125"
+                        android:text="查看详情"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cl3_task3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="102dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:text="ID"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ic3_task3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="101dp"
+                        android:text="123"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="312dp"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="330dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/level3_task3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="444dp"
+                        android:text="高"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <ImageView
+                        android:id="@+id/enable14_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_off" />
+
+                    <ImageView
+                        android:id="@+id/enable24_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_on"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/task4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="任务4"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/task4detail"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="#6AD125"
+                        android:text="查看详情"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cl4_task4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="102dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:text="ID"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ic4_task4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="101dp"
+                        android:text="123"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="312dp"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="330dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/level4_task4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="444dp"
+                        android:text="高"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <ImageView
+                        android:id="@+id/enable15_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_off" />
+
+                    <ImageView
+                        android:id="@+id/enable25_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_on"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/task5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="任务三"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/task5detail"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="#6AD125"
+                        android:text="查看详情"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cl5_task5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="102dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:text="ID"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ic5_task5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="101dp"
+                        android:text="123"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="312dp"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="330dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/level5_task5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="444dp"
+                        android:text="高"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <ImageView
+                        android:id="@+id/enable16_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_off" />
+
+                    <ImageView
+                        android:id="@+id/enable26_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_on"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/task6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="任务三"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/task6detail"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="#6AD125"
+                        android:text="查看详情"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cl6_task6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="102dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:text="ID"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ic6_task6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="101dp"
+                        android:text="123"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="312dp"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="330dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/level6_task6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="444dp"
+                        android:text="高"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <ImageView
+                        android:id="@+id/enable17_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_off" />
+
+                    <ImageView
+                        android:id="@+id/enable27_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_on"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/task7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="任务三"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/task7detail"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="#6AD125"
+                        android:text="查看详情"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cl7_task7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="102dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:text="ID"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ic7_task7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="101dp"
+                        android:text="123"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="312dp"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="330dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/level7_task7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="444dp"
+                        android:text="高"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <ImageView
+                        android:id="@+id/enable18_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_off" />
+
+                    <ImageView
+                        android:id="@+id/enable28_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_on"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/task8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="任务三"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/task8detail"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="#6AD125"
+                        android:text="查看详情"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cl8_task8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="102dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:text="ID"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ic8_task8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="101dp"
+                        android:text="123"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="312dp"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="330dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/level8_task8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="444dp"
+                        android:text="高"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <ImageView
+                        android:id="@+id/enable19_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_off" />
+
+                    <ImageView
+                        android:id="@+id/enable29_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_on"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/task9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="任务三"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/task9detail"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="#6AD125"
+                        android:text="查看详情"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cl9_task9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="102dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:text="ID"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ic9_task9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="101dp"
+                        android:text="123"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="312dp"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="330dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/level9_task9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="444dp"
+                        android:text="高"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <ImageView
+                        android:id="@+id/enable110_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_off" />
+
+                    <ImageView
+                        android:id="@+id/enable210_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_on"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/task10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="任务三"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/task10detail"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="#6AD125"
+                        android:text="查看详情"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cl10_task10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="102dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:text="ID"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ic10_task10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="101dp"
+                        android:text="123"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="312dp"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="330dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/level10_task10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="444dp"
+                        android:text="高"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <ImageView
+                        android:id="@+id/enable111_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_off" />
+
+                    <ImageView
+                        android:id="@+id/enable211_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_on"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/task11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="任务三"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/task11detail"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="#6AD125"
+                        android:text="查看详情"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cl11_task11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="102dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:text="ID"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ic11_task11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="101dp"
+                        android:text="123"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="312dp"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="330dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/level11_task11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="444dp"
+                        android:text="高"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <ImageView
+                        android:id="@+id/enable112_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_off" />
+
+                    <ImageView
+                        android:id="@+id/enable212_pro"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/checkbox_on"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/task12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="任务三"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/task12detail"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:background="#6AD125"
+                        android:text="查看详情"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cl12_task12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="102dp"
+                        android:text="回路："
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:text="ID"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ic12_task12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="101dp"
+                        android:text="123"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="312dp"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="330dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/level12_task12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="444dp"
+                        android:text="高"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <Button
+        android:id="@+id/readall"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@color/green"
+        android:text="批量抄读任务"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="68dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="IP地址"
+            android:textColor="@color/textbody_gray"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/address_dialog_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="130dp"
+            android:digits="1234567890."
+            android:hint="192.168.0.1"
+            android:inputType="number"
+            android:textColor="@color/textbody_black"
+            android:textSize="24sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="端口号"
+                android:textColor="@color/textbody_gray"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/address_dialog_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="130dp"
+                android:digits="1234567890"
+                android:hint="80"
+                android:inputType="number"
+                android:textColor="@color/textbody_black"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+</LinearLayout>

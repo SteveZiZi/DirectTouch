@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@color/leftmenuofcontrol"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cpc1_adjust"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="CPC1"
+                android:textColor="@color/textColor_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/cpc2_adjust"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="CPC2"
+                android:textColor="@color/textColor_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/cpc3_adjust"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="CPC3"
+                android:textColor="@color/textColor_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/cpc4_adjust"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="CPC4"
+                android:textColor="@color/textColor_gray"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="76dp" >
+
+                        <TextView
+                            android:id="@+id/tvname1_adj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24dp"
+                            android:text="回路#11"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="169dp"
+                            android:text="ON/OFF"
+                            android:textColor="@color/textbody_gray"
+                            android:textSize="24sp" />
+
+                        <com.xtoee.tools.SwitchView
+                            android:id="@+id/switch1_adj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="169dp"
+                        android:background="@color/line" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="76dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="169dp"
+                            android:text="DIM"
+                            android:textColor="@color/textbody_gray"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/dim1_adj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="34dp"
+                            android:text="100%"
+                            android:textColor="@color/textbody_black"
+                            android:textSize="24sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="76dp" >
+
+                        <TextView
+                            android:id="@+id/tvname2_adj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24dp"
+                            android:text="回路#12"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="169dp"
+                            android:text="ON/OFF"
+                            android:textColor="@color/textbody_gray"
+                            android:textSize="24sp" />
+
+                        <com.xtoee.tools.SwitchView
+                            android:id="@+id/switch2_adj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="169dp"
+                        android:background="@color/line" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="76dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="169dp"
+                            android:text="DIM"
+                            android:textColor="@color/textbody_gray"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/dim2_adj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="34dp"
+                            android:text="100%"
+                            android:textColor="@color/textbody_black"
+                            android:textSize="24sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="76dp" >
+
+                        <TextView
+                            android:id="@+id/tvname3_adj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24dp"
+                            android:text="回路#13"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="169dp"
+                            android:text="ON/OFF"
+                            android:textColor="@color/textbody_gray"
+                            android:textSize="24sp" />
+
+                        <com.xtoee.tools.SwitchView
+                            android:id="@+id/switch3_adj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="169dp"
+                        android:background="@color/line" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="76dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="169dp"
+                            android:text="DIM"
+                            android:textColor="@color/textbody_gray"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/dim3_adj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="34dp"
+                            android:text="100%"
+                            android:textColor="@color/textbody_black"
+                            android:textSize="24sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="76dp" >
+
+                        <TextView
+                            android:id="@+id/tvname4_adj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="24dp"
+                            android:text="回路#14"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="169dp"
+                            android:text="ON/OFF"
+                            android:textColor="@color/textbody_gray"
+                            android:textSize="24sp" />
+
+                        <com.xtoee.tools.SwitchView
+                            android:id="@+id/switch4_adj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="169dp"
+                        android:background="@color/line" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="76dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="169dp"
+                            android:text="DIM"
+                            android:textColor="@color/textbody_gray"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/dim4_adj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="34dp"
+                            android:text="100%"
+                            android:textColor="@color/textbody_black"
+                            android:textSize="24sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/adjust_save"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@color/green"
+        android:text="查看调光结果"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</LinearLayout>

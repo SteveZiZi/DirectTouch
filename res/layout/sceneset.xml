@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/leftmenuofcontrol" >
+
+        <RelativeLayout
+            android:id="@+id/sceneset_back"
+            android:layout_width="60dp"
+            android:layout_height="88dp">
+
+            <ImageView
+                android:id="@+id/sceneset_backimg"
+                android:layout_width="17dp"
+                android:layout_height="31dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detail_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pro_name"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/sceneset_back"
+            android:gravity="center"
+            android:text="场景设置"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp" >
+
+            <ImageButton
+                android:layout_width="44dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <LinearLayout 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="60dp"
+   	    android:background="@color/leftmenuofcontrol"
+   	    android:orientation="horizontal">
+   	    
+   	    <TextView 
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="match_parent"
+   	        android:layout_marginLeft="30dp"
+   	        android:gravity="center"
+   	        android:text="当前CPC："
+   	        android:textSize="26sp"
+   	        android:textColor="@color/white"/>
+   	    
+   	    <Spinner 
+   	        android:id="@+id/spinner_sceneset"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:entries="@array/CPC_spinner"
+   	        android:layout_marginLeft="10dp"/>
+   	</LinearLayout>
+   	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@color/leftmenuofcontrol"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/scene1_set"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="场景1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="26sp"/>
+        
+        <Button 
+            android:id="@+id/scene2_set"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+            android:text="场景2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="26sp"/>
+        
+        <Button 
+            android:id="@+id/scene3_set"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="场景3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="26sp"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/CPC_head">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="83dp"
+            android:layout_centerVertical="true"
+            android:text="设备号"
+            android:textSize="26sp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="197dp"
+            android:layout_centerVertical="true"
+            android:text="子路号"
+            android:textSize="26sp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:layout_centerVertical="true"
+            android:text="特殊功能"
+            android:textSize="26sp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="504dp"
+            android:layout_centerVertical="true"
+            android:text="参数"
+            android:textSize="26sp"/>
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/sceneset_liseview"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+    </ListView>
+    
+    <Button
+        android:id="@+id/sceneset_save"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@color/green"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="设置设备号"
+                android:textSize="20sp"/>
+            
+            <NumberPicker 
+       			android:id="@+id/setTnNo_set"
+     			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:layout_gravity="center_horizontal"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="设置子路号"
+                android:textSize="20sp"/>
+            
+            <NumberPicker 
+       			android:id="@+id/setClNo_set"
+     			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:layout_gravity="center_horizontal"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="设置特殊功能"
+                android:textSize="20sp"/>
+            
+            <NumberPicker 
+       			android:id="@+id/setspec_set"
+     			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:layout_gravity="center_horizontal"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:padding="10dp"
+            android:text="设置参数"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/setpara_set"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" 
+            android:inputType="number"
+            android:hint=""
+            android:textSize="24sp"/>
+    </LinearLayout>
+    
+    
+</LinearLayout>

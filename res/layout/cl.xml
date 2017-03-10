@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@color/leftmenuofrun"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/cpc1_cl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc2_cl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc3_cl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc4_cl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc5_cl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc6_cl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC6"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+    </LinearLayout>
+    
+    <TableLayout
+        android:id="@+id/cpchead"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/CPC_head" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="回路"
+                android:textSize="20sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="68dp"
+                android:layout_gravity="bottom"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="电压(V)"
+                android:textSize="20sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="68dp"
+                android:layout_gravity="bottom"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="电流(A)"
+                android:textSize="20sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="68dp"
+                android:layout_gravity="bottom"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="功率(W)"
+                android:textSize="20sp"/>
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="68dp"
+                android:layout_gravity="bottom"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="状态"
+                android:textSize="20sp"/>
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="68dp"
+                android:layout_gravity="bottom"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Dim"
+                android:textSize="20sp"/>
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="68dp"
+                android:layout_gravity="bottom"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="温度(℃)"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="@color/line" />
+    </TableLayout>
+    
+    <GridView 
+        android:id="@+id/gridView_cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="7">
+        
+    </GridView>
+    
+
+</LinearLayout>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/leftmenuofcontrol"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="当前CPC："
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <Spinner
+            android:id="@+id/spinner_offon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:entries="@array/CPC_spinner" />
+        
+        <Button
+            android:id="@+id/fresh"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|right"
+            android:text="刷新         " 
+            android:textColor="@color/white"
+            android:background="@null"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <com.xtoee.tools.SwitchTitle 
+        android:id="@+id/clTitle_offon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </com.xtoee.tools.SwitchTitle>
+
+    <LinearLayout
+        android:id="@+id/offonhead"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:background="@color/CPC_head" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="69dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="子回路"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="69dp"
+                android:layout_weight="0"
+                android:layout_gravity="bottom"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="名称"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="69dp"
+                android:layout_weight="0"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="通断"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/subcl1_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="#1101"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/name1_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="名称1"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.xtoee.tools.SwitchView
+                android:id="@+id/switch1_offon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/subcl2_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="#1102"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/name2_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="名称2"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.xtoee.tools.SwitchView
+                android:id="@+id/switch2_offon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/subcl3_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="#1103"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/name3_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="名称3"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.xtoee.tools.SwitchView
+                android:id="@+id/switch3_offon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/subcl4_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="#1104"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/name4_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="名称4"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.xtoee.tools.SwitchView
+                android:id="@+id/switch4_offon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/subcl5_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="#1105"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/name5_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="名称5"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.xtoee.tools.SwitchView
+                android:id="@+id/switch5_offon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/subcl6_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="#1106"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/name6_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="名称6"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.xtoee.tools.SwitchView
+                android:id="@+id/switch6_offon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/subcl7_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="#1107"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/name7_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="名称7"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.xtoee.tools.SwitchView
+                android:id="@+id/switch7_offon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/subcl8_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="#1108"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/name8_offon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="名称8"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.xtoee.tools.SwitchView
+                android:id="@+id/switch8_offon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

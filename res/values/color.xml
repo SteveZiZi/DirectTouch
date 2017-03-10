@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="line">#ced4e4</color>
+    <color name="backg">#CED4E4</color>
+    <color name="gray">#959595</color>
+    <color name="head_blue">#3849AA</color>
+    <color name="head2_blue">#4364C1</color>
+    <color name="left_big_menu">#141B36</color>
+    <color name="left_cur_menu">#2B324B</color>
+    <color name="left_bkg">#2F3768</color>
+    <color name="white">#FFFFFF</color>
+    <color name="CPC_head">#E9EBF1</color>
+    <color name="textColor_gray">#C3CAEF</color>
+    <color name="textbody_gray">#8a92a3</color>
+    <color name="textbody_black">#4b556a</color>
+    <color name="line_dark">#9ca1ba</color>
+    <color name="green">#6ad026</color>
+    <color name="home_dark">#102553</color>
+    <color name="black">#000000</color>
+    <color name="menuwhite">#CCCCCC</color>
+    <color name="leftmenuofrun">#b37d11</color>
+    <color name="leftmenuofcontrol">#4bbb19</color>
+    <color name="leftmenuofsystem">#3b71d5</color>
+    
+</resources>

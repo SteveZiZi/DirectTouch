@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/green" >
+
+        <RelativeLayout
+            android:id="@+id/task_detail_back"
+            android:layout_width="60dp"
+            android:layout_height="88dp">
+
+            <ImageView
+                android:id="@+id/detail_backimg"
+                android:layout_width="17dp"
+                android:layout_height="31dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detail_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pro_name"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/task_detail_back"
+            android:gravity="center"
+            android:text="@string/procont"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/task_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/pro_name"
+            android:gravity="center"
+            android:text="@string/task_detail"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp" >
+
+            <ImageButton
+                android:layout_width="44dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_task_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:layout_weight="1"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="ID号"
+                    android:textColor="@color/textbody_black"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/task_detail_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="166dp"
+                    android:text="123"
+                    android:textColor="@color/textbody_gray"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/line_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="26dp"
+                android:minWidth="20dp"
+                android:minHeight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="任务名"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="优先级"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="优先"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="起止时间"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_bendtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="2015/07/17-2016/07/17"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="循环方式"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_loopway"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="周一、周二、周三、周四、周五、周六、周日"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="CPC"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_CPC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="CPC1"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="69dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="24dp"
+                        android:text="回路"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_cls"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="回路一、回路二、回路三、回路四"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="时间"
+                        android:textColor="@color/textbody_gray"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="动作"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/task_detail_addaction"
+                        android:layout_width="120dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="24dp"
+                        android:background="@color/green"
+                        android:text="添加动作"
+                        android:textSize="22sp"
+                        android:textColor="@color/white"/>
+                    
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/task_detail_action1area"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:id="@+id/task_detail_action1_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="08:00"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_action1_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="80%"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/task_detail_deleteaction1"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="68dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_action" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="24dp" 
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/task_detail_action2area"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:id="@+id/task_detail_action2_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="时间"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_action2_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="动作"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/task_detail_deleteaction2"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="68dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_action" />
+                    
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="24dp" 
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/task_detail_action3area"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:id="@+id/task_detail_action3_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="时间"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_action3_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="动作"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/task_detail_deleteaction3"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="68dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_action" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="24dp" 
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/task_detail_action4area"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:id="@+id/task_detail_action4_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="时间"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_action4_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="动作"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/task_detail_deleteaction4"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="68dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_action" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="24dp" 
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/task_detail_action5area"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:id="@+id/task_detail_action5_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="时间"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_action5_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="动作"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/task_detail_deleteaction5"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="68dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_action" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="24dp" 
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line"/>
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/task_detail_action6area"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:id="@+id/task_detail_action6_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="08:00"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_action6_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="80%"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/task_detail_deleteaction6"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="68dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_action" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="24dp" 
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line"/>
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/task_detail_action7area"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:id="@+id/task_detail_action7_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="08:00"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_action7_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="80%"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/task_detail_deleteaction7"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="68dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_action" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="24dp" 
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line"/>
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/task_detail_action8area"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:id="@+id/task_detail_action8_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="08:00"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_action8_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="80%"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/task_detail_deleteaction8"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="68dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_action" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="24dp" 
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line"/>
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/task_detail_action9area"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:id="@+id/task_detail_action9_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="08:00"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_action9_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="80%"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/task_detail_deleteaction9"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="68dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_action" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="24dp" 
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line"/>
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/task_detail_action10area"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:id="@+id/task_detail_action10_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="08:00"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_action10_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="80%"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/task_detail_deleteaction10"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="68dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_action" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="24dp" 
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line"/>
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/task_detail_action11area"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:id="@+id/task_detail_action11_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="08:00"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_action11_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="80%"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/task_detail_deleteaction11"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="68dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_action" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="24dp" 
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line"/>
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/task_detail_action12area"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp" >
+
+                    <TextView
+                        android:id="@+id/task_detail_action12_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="08:00"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/task_detail_action12_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="166dp"
+                        android:text="80%"
+                        android:textColor="@color/textbody_black"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/task_detail_deleteaction12"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="68dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_action" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="24dp" 
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/task_detail_save"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@color/green"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</LinearLayout>

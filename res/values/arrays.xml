@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="CPC_spinner">
+        <item >CPC1</item>
+        <item >CPC2</item>
+        <item >CPC3</item>
+        <item >CPC4</item>
+        <item >CPC5</item>
+        <item >CPC6</item>
+    </string-array>
+    <string-array name="LoopWay_task">
+        <item >周一</item>
+        <item >周二</item>
+        <item >周三</item>
+        <item >周四</item>
+        <item >周五</item>
+        <item >周六</item>
+        <item >周日</item>
+    </string-array>
+    <string-array name="CLs_task">
+        <item >回路1</item>
+        <item >回路2</item>
+        <item >回路3</item>
+        <item >回路4</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@color/leftmenuofcontrol"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/cpc1_scene"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc2_scene"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc3_scene"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc4_scene"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc5_scene"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+        
+        <Button 
+            android:id="@+id/cpc6_scene"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CPC6"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/textColor_gray"
+            android:textSize="22sp"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="94dp">
+        
+        <TextView 
+            android:id="@+id/scenesetdetail_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="28dp"
+            android:layout_alignParentRight="true"
+            android:text="场景设置"
+            android:textSize="24sp"
+            android:textColor="#3849aa"/>
+        
+        <ImageView 
+            android:layout_toLeftOf="@id/scenesetdetail_scene"
+            android:baselineAlignBottom="@id/scenesetdetail_scene"
+            android:layout_centerVertical="true"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/scene_set"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/white">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_centerVertical="true"
+                android:text="场景"
+                android:textSize="22sp"
+                android:textColor="@color/textbody_gray"/>
+            
+            <TextView
+                android:id="@+id/scene1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="81dp"
+                android:text="客厅"
+                android:textSize="22sp"
+                android:textColor="@color/textbody_black"/>
+            
+            <ImageButton 
+                android:id="@+id/scene1set"
+                android:layout_width="69dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/right_detail"/>
+            
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_centerVertical="true"
+                android:text="开关："
+                android:textSize="22sp"
+                android:textColor="@color/textbody_gray"/>
+            
+            <com.xtoee.tools.SwitchView
+                android:id="@+id/scene1_offon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_centerVertical="true"
+                android:text="场景"
+                android:textSize="22sp"
+                android:textColor="@color/textbody_gray"/>
+            
+            <TextView
+                android:id="@+id/scene2"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="81dp"
+                android:text="场景2"
+                android:textSize="22sp"
+                android:textColor="@color/textbody_black"/>
+            
+            <ImageButton 
+                android:id="@+id/scene2set"
+                android:layout_width="69dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/right_detail"/>
+            
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_centerVertical="true"
+                android:text="开关："
+                android:textSize="22sp"
+                android:textColor="@color/textbody_gray"/>
+            
+            <com.xtoee.tools.SwitchView
+                android:id="@+id/scene2_offon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_centerVertical="true"
+                android:text="场景"
+                android:textSize="22sp"
+                android:textColor="@color/textbody_gray"/>
+            
+            <TextView
+                android:id="@+id/scene3"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="81dp"
+                android:text="场景3"
+                android:textSize="22sp"
+                android:textColor="@color/textbody_black"/>
+            
+            <ImageButton 
+                android:id="@+id/scene3set"
+                android:layout_width="69dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/right_detail"/>
+            
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_centerVertical="true"
+                android:text="开关："
+                android:textSize="22sp"
+                android:textColor="@color/textbody_gray"/>
+            
+            <com.xtoee.tools.SwitchView
+                android:id="@+id/scene3_offon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

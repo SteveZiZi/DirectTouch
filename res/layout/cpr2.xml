@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/backg"
+    android:orientation="vertical" >
+    
+    
+   	<LinearLayout 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="60dp"
+   	    android:background="@color/leftmenuofrun"
+   	    android:orientation="horizontal">
+   	    
+   	    <TextView 
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="match_parent"
+   	        android:layout_marginLeft="30dp"
+   	        android:gravity="center"
+   	        android:text="当前CPC："
+   	        android:textSize="26sp"
+   	        android:textColor="@color/white"/>
+   	    
+   	    <Spinner 
+   	        android:id="@+id/spinner_cpr"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:entries="@array/CPC_spinner"
+   	        android:layout_marginLeft="10dp"/>
+   	</LinearLayout>
+    
+    <com.xtoee.tools.SwitchTitle 
+        android:id="@+id/clTitle_cpr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </com.xtoee.tools.SwitchTitle>
+    
+    <TableLayout
+        android:id="@+id/cprhead"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/CPC_head" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="68dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="CPR"
+                android:textSize="22sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="68dp"
+                android:layout_gravity="bottom"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="电压(V)"
+                android:textSize="22sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="68dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="电流(A)"
+                android:textSize="22sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="68dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="功率(W)"
+                android:textSize="22sp"/>
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="68dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="状态"
+                android:textSize="22sp"/>
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="68dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="温度(℃)"
+                android:textSize="22sp"/>
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="@color/line" />
+    </TableLayout>
+    
+    <GridView 
+        android:id="@+id/gridView_cpr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="6">
+        
+    </GridView>
+    
+
+</LinearLayout>

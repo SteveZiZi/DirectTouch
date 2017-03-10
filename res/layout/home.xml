@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xtoee.tools.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/epay_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3949a9" >
+
+    <FrameLayout
+        android:id="@+id/fl_home_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3849aa" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title"
+            android:textColor="#ffffffff"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@drawable/run_shape">
+
+        <LinearLayout
+            android:id="@+id/title1"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/run_shape"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="     RUN     "
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/run" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="90dp"
+                android:text="@string/run"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="100dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/home_cpc"
+                android:clickable="true"
+            	android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/run_item_of_cpc_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Equipment"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/cpc"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_cl"
+                android:clickable="true"
+            	android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/run_item_of_cl_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Line"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/cl"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_cpr"
+                android:clickable="true"
+            	android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/run_item_of_cpr_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Rectifier"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/cpr"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_subcl"
+                android:clickable="true"
+            	android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/run_item_of_subcl_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Sub-line"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/subcl"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/control_shape">
+
+        <LinearLayout
+            android:id="@+id/title2"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/control_shape"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="CONTROL"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/control" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="90dp"
+                android:text="@string/control"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="100dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/home_procont"
+                android:clickable="true"
+            	android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/control_item_of_procont_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Program Control"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/control"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_scene"
+                android:clickable="true"
+            	android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/control_item_of_scene_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Scene"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/scene"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_adjust"
+                android:clickable="true"
+            	android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/control_item_of_adjust_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Hand-Dimming"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/adjust"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_offon"
+                android:clickable="true"
+            	android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/control_item_of_offon_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Sub-line On-Off"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/offon"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/system_shape">
+
+        <LinearLayout
+            android:id="@+id/title3"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/system_shape"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="SYSTEM "
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/system" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="90dp"
+                android:text="@string/system"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="100dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/home_common"
+                android:clickable="true"
+            	android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/system_item_of_common_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Communicate"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/common"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_manage"
+                android:clickable="true"
+            	android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/system_item_of_manager_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Management"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/manager"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_set"
+                android:clickable="true"
+            	android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/system_item_of_set_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Setup"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/set"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_record"
+                android:clickable="true"
+            	android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/system_item_of_record_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Record"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/record"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_home_footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_header_footer" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="这里是脚"
+            android:textColor="#ffffffff"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+</com.xtoee.tools.CardView>

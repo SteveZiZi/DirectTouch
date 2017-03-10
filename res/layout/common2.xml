@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="94dp">
+        
+        <TextView 
+            android:id="@+id/addressAdd_common2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:text="增加地址"
+            android:textSize="24sp"
+            android:textColor="#3849aa"/>
+        
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            
+            <ListView 
+        		android:id="@+id/common2_listview"
+        		android:scrollbars="none"
+        		android:cacheColorHint="#00000000"
+        		android:layout_marginLeft="25dp"
+        		android:layout_marginRight="25dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content">
+       		</ListView>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/commom2_save"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@color/leftmenuofsystem"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</LinearLayout>
